@@ -61,6 +61,7 @@
     "seed-floats": "0.0.4",
     "seed-grid": "^0.1.2",
     "seed-props": "0.0.3",
+    "seed-reset": "0.0.1",
     "seed-spacing": "0.0.5",
     "seed-typography": "0.0.7",
     "seed-visibility": "0.0.5",

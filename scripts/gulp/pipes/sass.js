@@ -10,6 +10,7 @@ var pathfinder = require('sass-pathfinder');
 
 var includePaths = pathfinder(
   global.config.src + '/_assets/scss',
+  require('seed-reset'),
   require('seed-breakpoints'),
   require('seed-floats'),
   require('seed-grid'),
