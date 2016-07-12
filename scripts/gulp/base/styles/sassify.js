@@ -3,6 +3,6 @@
 
 var gulp = require('gulp');
 
-gulp.task('styles-sassify', function() {
-  return global.sassify();
+gulp.task('styles-sassify', function(callback) {
+  return global.sassify(callback);
 });

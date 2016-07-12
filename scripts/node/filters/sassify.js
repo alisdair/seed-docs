@@ -61,7 +61,7 @@ var updateFiles = function(files, css) {
 };
 
 var sassify = function(callback) {
-  var file = `${dest}/css/main.css`;
+  var file = `${dest}css/main.css`;
   var css = fs.readFileSync(file, 'utf8');
   var options = {
     cwd: dest
