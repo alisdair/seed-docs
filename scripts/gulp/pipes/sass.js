@@ -9,7 +9,15 @@ var sass = require('gulp-sass');
 var pathfinder = require('sass-pathfinder');
 
 var includePaths = pathfinder(
-  global.config.src + '/_assets/scss'
+  global.config.src + '/_assets/scss',
+  require('seed-breakpoints'),
+  require('seed-floats'),
+  require('seed-grid'),
+  require('seed-props'),
+  require('seed-spacing'),
+  require('seed-typography'),
+  require('seed-width'),
+  require('seed-visibility')
 );
 
 var pipe = lazypipe()
