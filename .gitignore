@@ -7,4 +7,5 @@ npm-debug.log
 
 .jekyll-metadata
 .asset-cache/
+.publish/
 _site/

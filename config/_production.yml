@@ -1,3 +1,4 @@
+url: http://developer.helpscout.net/seed-docs
 ENV: production
 
 future: false
