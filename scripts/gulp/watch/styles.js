@@ -8,7 +8,7 @@ var path = require('path');
 
 gulp.task('watch-styles', function (callback) {
   gulp.watch([
-    global.config.src + '_assets/scss/**/*'
+    global.config.src + '/_assets/scss/**/*'
   ], ['styles-base'])
   .on('change', function(event) {
     var file = event.path;

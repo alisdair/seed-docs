@@ -5,15 +5,15 @@
 
   <body>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="o-container u-mrg-v-10">
+      <div class="o-row">
+        <div class="o-col-12 o-col-10--at-sm o-col-offset-1--at-sm o-col-8--at-md o-col-offset-2--at-md">
+          {% include header.html %}
+            {{ content }}
+          {% include footer.html %}
+        </div>
       </div>
     </div>
-
-    {% include footer.html %}
 
   </body>
 
