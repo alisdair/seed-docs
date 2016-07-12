@@ -1,6 +1,6 @@
-language: ruby
-rvm:
-  - 2.2.2
+language: node_js
+node_js:
+  - 4
 
 branches:
   only:
@@ -13,6 +13,7 @@ cache:
     - vendor/bundle
 
 before_install:
+  - rvm install 2.2.2
   - npm set progress=false
   - git config --global user.name "ItsJonQ"
   - git config --global user.email "itsjonq@gmail.com"
