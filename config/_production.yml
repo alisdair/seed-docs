@@ -1,4 +1,5 @@
-url: http://developer.helpscout.net/seed-docs
+baseurl: http://developer.helpscout.net
+url: /seed-docs
 ENV: production
 
 future: false
