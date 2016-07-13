@@ -1,7 +1,12 @@
 // Typography :: Base
 
 // Dependencies
+// Note: The seed pack @imports aren't necessary, as the entire pack is already
+// being imported in main.scss. However, this pattern is useful to indicate
+// where custom mixins (such as breakpoint()) are coming from.
+@import "pack/seed-breakpoints/mixins/base";
 @import "pack/seed-typography/mixins/smooth";
+// This comes from the project's own variables directory in scss/.
 @import "variables/color";
 
 & {
