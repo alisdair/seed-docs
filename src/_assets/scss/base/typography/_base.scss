@@ -7,6 +7,12 @@
 & {
   @include text-smooth;
   font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: $line-height-heading;
+  }
 
   a {
     color: $color-primary;
