@@ -1,0 +1,9 @@
+// Typography :: Link
+
+// Dependencies
+// This comes from the project's own variables directory in scss/.
+@import "variables/color";
+
+@at-root a {
+  color: $color-primary;
+}

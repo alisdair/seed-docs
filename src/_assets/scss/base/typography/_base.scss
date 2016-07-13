@@ -6,8 +6,6 @@
 // where custom mixins (such as breakpoint()) are coming from.
 @import "pack/seed-breakpoints/mixins/base";
 @import "pack/seed-typography/mixins/smooth";
-// This comes from the project's own variables directory in scss/.
-@import "variables/color";
 
 & {
   @include text-smooth;
@@ -16,13 +14,5 @@
 
   @include breakpoint(md) {
     font-size: $font-size-base;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    line-height: $line-height-heading;
-  }
-
-  a {
-    color: $color-primary;
   }
 }

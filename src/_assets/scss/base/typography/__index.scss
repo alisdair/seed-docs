@@ -4,5 +4,7 @@ html,
 body {
   @import "./variables";
   @import "./base";
+  @import "./heading";
+  @import "./link";
   @import "./hr";
 }
