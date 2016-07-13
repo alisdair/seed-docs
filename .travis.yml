@@ -29,4 +29,7 @@ before_script:
   - npm install gulp-cli -g
 
 script:
-  - gulp deploy
+  - gulp production
+
+after_success:
+  - gulp deploy-production
