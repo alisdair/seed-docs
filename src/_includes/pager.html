@@ -1,0 +1,17 @@
+{% if page.previous.url or page.next.url %}
+  <hr class="u-mrg-v-8">
+  <div class="u-clearfix u-pad-b-4">
+    {% if page.previous.url %}
+      <div class="u-pull-left">
+        <h5 class="u-mrg-t-0 u-mrg-b-2">Previous</h5>
+        <a href="{{page.previous.url}}">{{page.previous.title}}</a>
+      </div>
+    {% endif %}
+    {% if page.next.url %}
+      <div class="u-pull-right">
+        <h5 class="u-mrg-t-0 u-mrg-b-2">Next</h5>
+        <a href="{{page.next.url}}">{{page.next.title}}</a>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
