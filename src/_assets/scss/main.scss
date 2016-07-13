@@ -18,4 +18,10 @@
 @import "pack/seed-visibility/_index";
 
 // Base
-@import "base/_index";
+@import "./base/_index";
+
+// Sections
+@import "./sections/_index";
+
+// Plugins
+@import "./plugins/_index";

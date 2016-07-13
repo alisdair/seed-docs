@@ -1,0 +1,42 @@
+// Base :: Typography
+
+// Dependencies
+@import "pack/seed-typography/functions/heading";
+
+& {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+
+  // TODO: Add this typescale "reset" as an optional setting in seed-reset
+  // Default is enabled.
+  h1 {
+    font-size: t-heading(1);
+  }
+
+  h2 {
+    font-size: t-heading(2);
+  }
+
+  h3 {
+    font-size: t-heading(3);
+  }
+
+  h4 {
+    font-size: t-heading(4);
+  }
+
+  h5 {
+    font-size: t-heading(5);
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}

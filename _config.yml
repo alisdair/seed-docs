@@ -6,6 +6,7 @@ source: ./src
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
 permalink: pretty
 
@@ -15,3 +16,18 @@ exclude:
   - .cache
   - .gitignore
   - node_modules
+
+collections:
+  guides:
+    output: true
+    permalink: /guide/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+
+excerpt_separator: <!--more-->
