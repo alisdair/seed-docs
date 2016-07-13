@@ -12,7 +12,6 @@ gulp.task('development', function(callback) {
     [
       'styles-base'
     ],
-    'inline-css',
     'browsersync',
     'watch'
   );
