@@ -6,10 +6,16 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <!-- Hello you wonderful view sourcer :). -->
+  <!-- You can find the source code this site here: -->
+  <!-- https://github.com/helpscout/seed-docs -->
+
+  <!-- Have a great day!!! -->
+
   {% if site.ENV == "development" %}
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url | cachebuster }}">
+    <link rel="stylesheet" href="/css/main.css">
   {% else %}
-    <style><%= sassify %></style>
+    <link inline rel="stylesheet" href="/css/main.css">
   {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
