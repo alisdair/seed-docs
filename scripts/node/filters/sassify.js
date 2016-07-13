@@ -81,5 +81,5 @@ var sassify = function(callback) {
     });
   });
 };
-sassify();
+
 module.exports = sassify;
