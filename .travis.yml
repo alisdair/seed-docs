@@ -16,7 +16,7 @@ before_install:
   - rvm install 2.2.2
   - npm set progress=false
   - echo -e "machine github.com\n  login ${GH_TOKEN}" >> ~/.netrc
-  - git remote set-url origin "https://${GH_TOKEN}@github.com/helpscout/styleguide.git"
+  - git remote set-url origin "https://${GH_TOKEN}@github.com/helpscout/seed-docs.git"
   - git config --global user.name "ItsJonQ"
   - git config --global user.email "itsjonq@gmail.com"
   - git config --global url.https://github.com/.insteadOf git://github.com/
