@@ -1,20 +1,21 @@
 // Seed Docs :: Main
 
 // Packs: Reset
-@import "pack/seed-reset";
+@import "pack/seed-reset/_index";
 
 // Packs: Functions/Mixins
-@import "pack/seed-props";
-@import "pack/seed-breakpoints";
+@import "pack/seed-props/_index";
+@import "pack/seed-breakpoints/_index";
 
 // Packs: Objects
-@import "pack/seed-grid";
+@import "pack/seed-grid/_index";
 
 // Packs: Utilities
-@import "pack/seed-floats";
-@import "pack/seed-spacing";
-@import "pack/seed-typography";
-@import "pack/seed-visibility";
+@import "pack/seed-floats/_index";
+@import "pack/seed-spacing/_index";
+@import "pack/seed-typography/_index";
+@import "pack/seed-width/_index";
+@import "pack/seed-visibility/_index";
 
 // Base
 @import "base/_index";
