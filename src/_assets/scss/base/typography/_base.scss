@@ -1,8 +1,8 @@
 // Typography :: Base
 
 // Dependencies
-@import "pack/mixins/smooth";
-@import "../../variables/color";
+@import "pack/seed-typography/mixins/smooth";
+@import "variables/color";
 
 & {
   @include text-smooth;
