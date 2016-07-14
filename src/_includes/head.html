@@ -13,7 +13,7 @@
   <!-- Have a great day!!! -->
 
   <!-- P.S. The stylesheet below is intentionally unminified. Sure that means that the page loads slightly slower. But, it makes it easier to inspect and poke around. -->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url | cachebuster }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
