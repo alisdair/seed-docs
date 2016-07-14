@@ -94,7 +94,7 @@ Here is our BEM'ed up `_base.scss`:
 ```
 
 
-Let's say we want to use this structure for multiple classes, without having to rewrite the same code (cause keeping things DRY is super cool). `@extend` doesn't work, as it doesn't extend nested styles. Also, `@extend` doesn't work on a `&`.
+Let's say we want to use this structure for multiple classes, without having to rewrite the same code (cause keeping things DRY is super cool). `@extend` doesn't work, as it doesn't extend nested styles. Also, `@extend` doesn't work on an `&` selector.
 
 Here's how you would do it:
 
