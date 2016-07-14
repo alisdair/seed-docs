@@ -9,6 +9,6 @@ gulp.task('production', function(callback) {
     'verify-dependencies',
     'clean-jekyll',
     'jekyll-production',
-    'styles'
+    'styles-base'
   );
 });

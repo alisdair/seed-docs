@@ -6,10 +6,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('deploy', function(callback) {
   runSequence(
-    'verify-dependencies',
-    'clean-jekyll',
-    'jekyll-production',
-    'styles',
+    'production',
     'deploy-production'
   );
 });
