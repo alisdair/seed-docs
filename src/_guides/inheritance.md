@@ -25,7 +25,7 @@ Next, in our `box.scss` file, we're going to `@import` the `_base.scss` file fro
 }
 ```
 
-By `@import`ing the `_base.scss` file within the `.box` class, the `&` selector inherits it's parent selector. So `&` *becomes* `.box`. Crazy right?
+By `@import`ing the `_base.scss` file within the `.box` class, the `&` selector inherits its parent selector. So `&` *becomes* `.box`. Crazy right?
 
 
 Compiled `box.css` file:
@@ -63,7 +63,7 @@ Let's BEM up `_base.scss`:
 
 Whoa whoa! Double `&`?! Heck yes double `&`!
 
-Once this file is `@import`ed into `box.scss`, the first `&` inherits the parent, which transforms it to `.box`. The second `&` inherits it's parent, which also makes it `.box`.
+Once this file is `@import`ed into `box.scss`, the first `&` inherits the parent, which transforms it to `.box`. The second `&` inherits its parent, which also makes it `.box`.
 
 The new compiled `box.css` file:
 
