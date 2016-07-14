@@ -8,7 +8,7 @@ var path = require('path');
 
 gulp.task('watch-jekyll-posts', function () {
   gulp.watch([
-    global.config.src + '/_guide/**/*.{html,md}',
+    global.config.src + '/_guides/**/*.{html,md}',
     global.config.src + '/_posts/**/*.{html,md}'
   ], ['build-jekyll'])
   .on('change', function(event) {
