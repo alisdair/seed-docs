@@ -1,24 +1,16 @@
-// Plugins :: Rouge
+// Rouge :: Base
 
 // Dependencies
 @import "pack/seed-spacing/functions/spacing";
-@import "vendors/highlight";
 
-.highlighter-rouge {
+& {
   background-color: #f8f8f8;
   border-radius: 3px;
   font-size: 85%;
+  padding: spacing(4);
   margin-bottom: 2em;
 
   > pre {
     margin: 0;
   }
-}
-
-div.highlighter-rouge {
-  padding: spacing(4);
-}
-
-code.highlighter-rouge {
-  padding: 0.2em 0;
 }

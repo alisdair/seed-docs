@@ -16,23 +16,23 @@
   // TODO: Add this typescale "reset" as an optional setting in seed-reset
   // Default is enabled.
   h1 {
-    font-size: t-heading(1);
+    font-size: t-heading(h1);
   }
 
   h2 {
-    font-size: t-heading(2);
+    font-size: t-heading(h2);
   }
 
   h3 {
-    font-size: t-heading(3);
+    font-size: t-heading(h3);
   }
 
   h4 {
-    font-size: t-heading(4);
+    font-size: t-heading(h4);
   }
 
   h5 {
-    font-size: t-heading(5);
+    font-size: t-heading(h5);
   }
 
   p {

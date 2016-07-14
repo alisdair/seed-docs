@@ -10,7 +10,6 @@ gulp.task('deploy', function(callback) {
     'clean-jekyll',
     'jekyll-production',
     'styles',
-    'inline-css',
     'deploy-production'
   );
 });
