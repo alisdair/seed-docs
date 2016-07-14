@@ -2,6 +2,6 @@
 title: Inheritance
 ---
 
-A mean, proper inheritance!
+I mean, proper inheritance!
 
 Guide coming soon!
