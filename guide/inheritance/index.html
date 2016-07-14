@@ -18,7 +18,7 @@
   <!-- P.S. The stylesheet below is intentionally unminified. -->
   <!-- Sure that means that the page loads slightly slower. -->
   <!-- But, it makes it easier to inspect and poke around. -->
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=6804d4333677592dfe2276a0b870389f">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=2428e342660f12027659aad1f7ed3ecd">
 
   <link rel="canonical" href="http://developer.helpscout.net/seed-docs/guide/inheritance/">
   <link rel="alternate" type="application/rss+xml" title="Seed Docs" href="http://developer.helpscout.net/seed-docs/feed.xml">
@@ -91,7 +91,7 @@
 </code></pre>
 </div>
 
-<p>By <code class="highlighter-rouge">@import</code>ing the <code class="highlighter-rouge">_base.scss</code> file within the <code class="highlighter-rouge">.box</code> class, the <code class="highlighter-rouge">&amp;</code> selector inherits it’s parent selector. So <code class="highlighter-rouge">&amp;</code> <em>becomes</em> <code class="highlighter-rouge">.box</code>. Crazy right?</p>
+<p>By <code class="highlighter-rouge">@import</code>ing the <code class="highlighter-rouge">_base.scss</code> file within the <code class="highlighter-rouge">.box</code> class, the <code class="highlighter-rouge">&amp;</code> selector inherits its parent selector. So <code class="highlighter-rouge">&amp;</code> <em>becomes</em> <code class="highlighter-rouge">.box</code>. Crazy right?</p>
 
 <p>Compiled <code class="highlighter-rouge">box.css</code> file:</p>
 
@@ -128,7 +128,7 @@
 
 <p>Whoa whoa! Double <code class="highlighter-rouge">&amp;</code>?! Heck yes double <code class="highlighter-rouge">&amp;</code>!</p>
 
-<p>Once this file is <code class="highlighter-rouge">@import</code>ed into <code class="highlighter-rouge">box.scss</code>, the first <code class="highlighter-rouge">&amp;</code> inherits the parent, which transforms it to <code class="highlighter-rouge">.box</code>. The second <code class="highlighter-rouge">&amp;</code> inherits it’s parent, which also makes it <code class="highlighter-rouge">.box</code>.</p>
+<p>Once this file is <code class="highlighter-rouge">@import</code>ed into <code class="highlighter-rouge">box.scss</code>, the first <code class="highlighter-rouge">&amp;</code> inherits the parent, which transforms it to <code class="highlighter-rouge">.box</code>. The second <code class="highlighter-rouge">&amp;</code> inherits its parent, which also makes it <code class="highlighter-rouge">.box</code>.</p>
 
 <p>The new compiled <code class="highlighter-rouge">box.css</code> file:</p>
 
