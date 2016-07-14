@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Scoping</title>
-  <meta name="description" content="wut. Oh yes. With Seed, scoping is a thing.Guide coming soon!">
+  <meta name="description" content="Note: Proper docs coming soon.Scoping example with variables// Input$pink-hot: pink; // Declare the variable.box {  background: $pink-hot;}.post {  $pink-hot...">
 
   <!-- Hello you wonderful view sourcer :). -->
   <!-- You can find the source code this site here: -->
@@ -18,7 +18,7 @@
   <!-- P.S. The stylesheet below is intentionally unminified. -->
   <!-- Sure that means that the page loads slightly slower. -->
   <!-- But, it makes it easier to inspect and poke around. -->
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=6e478af9368be2fabcb71c88ca88fc0c">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=b1bd58225c94966c950b374ac4f78290">
 
   <link rel="canonical" href="http://developer.helpscout.net/seed-docs/guide/scoping/">
   <link rel="alternate" type="application/rss+xml" title="Seed Docs" href="http://developer.helpscout.net/seed-docs/feed.xml">
@@ -69,9 +69,64 @@
   <hr class="u-mrg-v-8">
 
   <div>
-    <p>wut. Oh yes. With Seed, scoping is a thing.</p>
+    <p>Note: Proper docs coming soon.</p>
 
-<p>Guide coming soon!</p>
+<h3 id="scoping-example-with-variables">Scoping example with variables</h3>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// Input
+</span><span class="nv">$pink-hot</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span> <span class="c1">// Declare the variable
+</span>
+<span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$pink-hot</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.post</span> <span class="p">{</span>
+  <span class="nv">$pink-hot</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="c1">// Tweak the variable
+</span>  <span class="nl">background</span><span class="p">:</span> <span class="nv">$pink-hot</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.footer</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$pink-hot</span><span class="p">;</span> <span class="c1">// Is this pink… or red?
+</span><span class="p">}</span>
+
+<span class="c1">// Output
+</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.post</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.footer</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span> <span class="c1">// Pink. Ah yeah.
+</span><span class="p">}</span>
+</code></pre>
+</div>
+
+<h3 id="scoping-example-with-import">Scoping example with <code class="highlighter-rouge">@import</code></h3>
+
+<p><strong>Unscoped <code class="highlighter-rouge">@import</code></strong></p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">"variables/a-thing"</span><span class="p">;</span>
+<span class="c1">// From this point forward,
+// $thing will be available to EVERYTHING.
+</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$thing</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p><strong>Scoped <code class="highlighter-rouge">@import</code></strong></p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="nc">.box</span> <span class="p">{</span>
+  <span class="k">@import</span> <span class="s2">"variables/a-thing"</span><span class="p">;</span>
+  <span class="c1">// $thing is only available within .box
+</span>  <span class="nl">background</span><span class="p">:</span> <span class="nv">$thing</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// $thing? What $thing? You crazy.
+</span></code></pre>
+</div>
 
   </div>
 
