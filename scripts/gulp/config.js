@@ -6,7 +6,7 @@ var config = {
   port: 7856,
   cache: '.asset-cache',
   src: 'src',
-  dest: '_site'
+  dest: 'seed-docs'
 };
 
 module.exports = config;

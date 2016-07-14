@@ -9,3 +9,4 @@ npm-debug.log
 .asset-cache/
 .publish/
 _site/
+seed-docs/

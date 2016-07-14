@@ -4,13 +4,13 @@
     {% if page.previous.url %}
       <div class="u-pull-left">
         <h5 class="u-mrg-t-0 u-mrg-b-2">Previous</h5>
-        <a href="{{page.previous.url | prepend: site.baseurl }}">{{page.previous.title}}</a>
+        <a href="{{ page.previous.url | prepend: site.baseurl }}">{{page.previous.title}}</a>
       </div>
     {% endif %}
     {% if page.next.url %}
       <div class="u-pull-right">
         <h5 class="u-mrg-t-0 u-mrg-b-2">Next</h5>
-        <a href="{{page.next.url | prepend: site.baseurl }}">{{page.next.title}}</a>
+        <a href="{{ page.next.url | prepend: site.baseurl }}">{{page.next.title}}</a>
       </div>
     {% endif %}
   </div>

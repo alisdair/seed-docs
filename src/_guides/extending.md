@@ -7,6 +7,8 @@ description: "Our humble opinion on Sass's @extend function."
 
 _This is just our humble opinion. You are 100% totally free to use `@extend` if you wish._
 
+Instead, check out our guide on [inheritance](/seed-docs/guide/inheritance) to extend code without the crazies.
+
 ### Powerful, but unpredictable
 
 `@extend` is an undeniably powerful function in the sass/scss arsenal. For simpler use cases (example below), `@extend` _should_ work as expected.

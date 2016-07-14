@@ -13,6 +13,7 @@ gulp.task('development', function(callback) {
       'styles-base'
     ],
     'browsersync',
+    'open-development',
     'watch'
   );
 });

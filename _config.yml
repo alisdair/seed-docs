@@ -1,8 +1,9 @@
 title: Seed Docs
 description: Docs and guidelines for Seed CSS
-baseurl: ""
+baseurl: "/seed-docs"
 ENV: development
 source: ./src
+destination: ./seed-docs
 
 # Build settings
 markdown: kramdown

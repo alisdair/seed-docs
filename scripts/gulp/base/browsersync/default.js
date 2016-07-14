@@ -8,7 +8,8 @@ gulp.task('browsersync', function() {
     notify: false,
     port: global.config.port,
     server: {
-      baseDir: global.config.dest
-    }
+      baseDir: './'
+    },
+    open: false
   });
 });
