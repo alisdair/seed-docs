@@ -10,7 +10,7 @@ gulp.task('watch-jekyll-posts', function () {
   gulp.watch([
     global.config.src + '/_guides/**/*.{html,md}',
     global.config.src + '/_posts/**/*.{html,md}'
-  ], ['build-jekyll'])
+  ], ['build-jekyll-data'])
   .on('change', function(event) {
     var file = event.path
       .replace(global.path, '')
