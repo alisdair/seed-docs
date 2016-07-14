@@ -1,3 +1,7 @@
 // Base :: Index
 
-@import "./typography/_index";
+@at-root {
+  @import "./typography/_index";
+  @import "./hr";
+  @import "./svg";
+}

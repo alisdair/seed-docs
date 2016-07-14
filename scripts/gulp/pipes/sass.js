@@ -12,6 +12,7 @@ var includePaths = pathfinder(
   global.config.src + '/_assets/scss',
   require('seed-reset'),
   require('seed-breakpoints'),
+  require('seed-flexy'),
   require('seed-floats'),
   require('seed-grid'),
   require('seed-props'),
