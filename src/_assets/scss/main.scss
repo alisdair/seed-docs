@@ -29,3 +29,19 @@
 
 // Plugins
 @import "./plugins/_index";
+
+
+$pink-hot: pink;
+
+.box {
+  background: $pink-hot;
+}
+
+.post {
+  $pink-hot: red;
+  background: $pink-hot;
+}
+
+.footer {
+  background: $pink-hot;
+}
