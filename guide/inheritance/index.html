@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Inheritance</title>
-  <meta name="description" content="I mean, proper inheritance!Guide coming soon!">
+  <meta name="description" content="Simple inheritance exampleLet’s start with an example _base.scss file.// _base.scss&amp; {  background-color: blue;}Wait. The selector is an &amp;. This is t...">
 
   <!-- Hello you wonderful view sourcer :). -->
   <!-- You can find the source code this site here: -->
@@ -18,7 +18,7 @@
   <!-- P.S. The stylesheet below is intentionally unminified. -->
   <!-- Sure that means that the page loads slightly slower. -->
   <!-- But, it makes it easier to inspect and poke around. -->
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=b1bd58225c94966c950b374ac4f78290">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=d32b6b38a9f4ad95d438b2eec5d0b000">
 
   <link rel="canonical" href="http://developer.helpscout.net/seed-docs/guide/inheritance/">
   <link rel="alternate" type="application/rss+xml" title="Seed Docs" href="http://developer.helpscout.net/seed-docs/feed.xml">
@@ -69,9 +69,129 @@
   <hr class="u-mrg-v-8">
 
   <div>
-    <p>I mean, proper inheritance!</p>
+    <h3 id="simple-inheritance-example">Simple inheritance example</h3>
 
-<p>Guide coming soon!</p>
+<p>Let’s start with an example <code class="highlighter-rouge">_base.scss</code> file.</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// _base.scss
+</span><span class="k">&amp;</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Wait. The selector is an <code class="highlighter-rouge">&amp;</code>. This is the entire file? Yes, and yes. This might seem insane, but bear with me.</p>
+
+<p>Next, in our <code class="highlighter-rouge">box.scss</code> file, we’re going to <code class="highlighter-rouge">@import</code> the <code class="highlighter-rouge">_base.scss</code> file from within the class. (Check out our guide on <a href="/seed-docs/guide/scoping">scoping</a>).</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// box.scss
+</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="k">@import</span> <span class="s2">"./base"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>By <code class="highlighter-rouge">@import</code>ing the <code class="highlighter-rouge">_base.scss</code> file within the <code class="highlighter-rouge">.box</code> class, the <code class="highlighter-rouge">&amp;</code> selector inherits it’s parent selector. So <code class="highlighter-rouge">&amp;</code> <em>becomes</em> <code class="highlighter-rouge">.box</code>. Crazy right?</p>
+
+<p>Compiled <code class="highlighter-rouge">box.css</code> file:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// box.css
+</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h3 id="lets-make-this-interesting">Let’s make this interesting</h3>
+
+<p>Take the same <code class="highlighter-rouge">box.scss</code> file as before:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// box.scss
+</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="k">@import</span> <span class="s2">"./base"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Let’s BEM up <code class="highlighter-rouge">_base.scss</code>:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// _base.scss
+</span><span class="k">&amp;</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+
+  <span class="k">&amp;</span><span class="nt">__item</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Whoa whoa! Double <code class="highlighter-rouge">&amp;</code>?! Heck yes double <code class="highlighter-rouge">&amp;</code>!</p>
+
+<p>Once this file is <code class="highlighter-rouge">@import</code>ed into <code class="highlighter-rouge">box.scss</code>, the first <code class="highlighter-rouge">&amp;</code> inherits the parent, which transforms it to <code class="highlighter-rouge">.box</code>. The second <code class="highlighter-rouge">&amp;</code> inherits it’s parent, which also makes it <code class="highlighter-rouge">.box</code>.</p>
+
+<p>The new compiled <code class="highlighter-rouge">box.css</code> file:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// box.css
+</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box__item</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h3 id="now-this-is-how-you-extend">Now this is how you extend.</h3>
+
+<p>Here is our BEM’ed up <code class="highlighter-rouge">_base.scss</code>:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// _base.scss
+</span><span class="k">&amp;</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+
+  <span class="k">&amp;</span><span class="nt">__item</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Let’s say we want to use this structure for multiple classes, without having to rewrite the same code (cause keeping things DRY is super cool). <code class="highlighter-rouge">@extend</code> doesn’t work, as it doesn’t extend nested styles. Also, <code class="highlighter-rouge">@extend</code> doesn’t work on a <code class="highlighter-rouge">&amp;</code>.</p>
+
+<p>Here’s how you would do it:</p>
+
+<p><code class="highlighter-rouge">components.scss</code> file:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// components.scss
+</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="k">@import</span> <span class="s2">"./base"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.panel</span> <span class="p">{</span>
+  <span class="k">@import</span> <span class="s2">"./base"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>The compiled <code class="highlighter-rouge">components.css</code> file:</p>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// components.css
+</span><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box__item</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.panel</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.panel__item</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
 
   </div>
 
