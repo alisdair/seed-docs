@@ -29,4 +29,5 @@ before_script:
   - npm install gulp-cli -g
 
 script:
+  - npm test
   - gulp production

@@ -4,7 +4,9 @@
   "description": "Docs and guidelines for Seed CSS",
   "main": "index.js",
   "homepage": "",
-  "scripts": {},
+  "scripts": {
+    "test": "sh ./scripts/tests/lint.sh"
+  },
   "repository": {
     "type": "git",
     "url": ""
