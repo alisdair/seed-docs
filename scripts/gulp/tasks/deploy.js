@@ -7,6 +7,7 @@ var runSequence = require('run-sequence');
 gulp.task('deploy', function(callback) {
   runSequence(
     'production',
-    'deploy-production'
+    'deploy-production',
+    callback
   );
 });
