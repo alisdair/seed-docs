@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Extending</title>
-  <meta name="description" content="Don't use @extend.This is just our humble opinion. You are 100% totally free to use @extend if you wish.Powerful, but unpredictable@extend is an undeniably p...">
+  <title>Organization</title>
+  <meta name="description" content="Guide coming soon!">
 
   <!-- Hello you wonderful view sourcer :). -->
   <!-- You can find the source code this site here: -->
@@ -20,7 +20,7 @@
   <!-- But, it makes it easier to inspect and poke around. -->
   <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=6c3bb1ca7e73b3add1bd83a03e8c1f4f">
 
-  <link rel="canonical" href="http://developer.helpscout.net/seed-docs/guide/extending/">
+  <link rel="canonical" href="http://developer.helpscout.net/seed-docs/guide/organization/">
   <link rel="alternate" type="application/rss+xml" title="Seed Docs" href="http://developer.helpscout.net/seed-docs/feed.xml">
 </head>
 
@@ -62,74 +62,14 @@
       Guide To
     </a>
     <h1 class="t-700">
-      Extending
+      Organization
     </h1>
   </header>
 
   <hr class="u-mrg-v-8">
 
   <div>
-    <p class="t-headline-4 t-lh-heading t-300">Don't use @extend.</p>
-
-<p><em>This is just our humble opinion. You are 100% totally free to use <code class="highlighter-rouge">@extend</code> if you wish.</em></p>
-
-<h3 id="powerful-but-unpredictable">Powerful, but unpredictable</h3>
-
-<p><code class="highlighter-rouge">@extend</code> is an undeniably powerful function in the sass/scss arsenal. For simpler use cases (example below), <code class="highlighter-rouge">@extend</code> <em>should</em> work as expected.</p>
-
-<p><strong>A simple example of <code class="highlighter-rouge">@extend</code></strong></p>
-
-<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// Input
-</span><span class="nc">.c-panel</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nc">.c-box</span> <span class="p">{</span>
-  <span class="k">@extend</span> <span class="nc">.c-panel</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">// Output
-</span><span class="nc">.c-panel</span><span class="o">,</span> <span class="nc">.c-box</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-
-<p><code class="highlighter-rouge">.c-box</code> inheriting the properties of <code class="highlighter-rouge">.c-panel</code> is expected. However, the grouping of the classes together is not.</p>
-
-<p>If <code class="highlighter-rouge">.c-panel</code> was somewhere up higher on the stylesheet, and <code class="highlighter-rouge">.c-box</code> was somewhere lower, this <code class="highlighter-rouge">@extend</code> effect magically shifts things around. This little detail is especially important if you <strong>needed</strong> <code class="highlighter-rouge">.c-box</code> to be lower on your stylesheet.</p>
-
-<h3 id="extend-doesnt-extend-everything">Extend doesn’t extend everything</h3>
-
-<p><code class="highlighter-rouge">@extend</code> only extends the top level properties of the class. A great use case would be with sass/scss written with the BEM structure. In the below example, we can see where <code class="highlighter-rouge">@extend</code> falls short.</p>
-
-<p><strong>A more complicated example of <code class="highlighter-rouge">@extend</code></strong></p>
-
-<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// Input
-</span><span class="nc">.c-panel</span> <span class="p">{</span>
-  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
-
-  <span class="k">&amp;</span><span class="nt">__body</span> <span class="p">{</span>
-    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="nc">.c-box</span> <span class="p">{</span>
-  <span class="k">@extend</span> <span class="nc">.c-panel</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">// Output
-</span><span class="nc">.c-panel</span><span class="o">,</span> <span class="nc">.c-box</span> <span class="p">{</span>
-  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nc">.c-panel__body</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-
-<p>Based on how <code class="highlighter-rouge">.c-panel</code> is structured, utilizing the <code class="highlighter-rouge">&amp;</code> to inherit the parent selector, you would <em>think</em> that <code class="highlighter-rouge">@extend</code> would respect the nested class of <code class="highlighter-rouge">&amp;__body</code>. But nope.</p>
+    <p>Guide coming soon!</p>
 
   </div>
 
@@ -137,10 +77,15 @@
   <hr class="u-mrg-v-8">
   <div class="u-clearfix u-pad-b-4">
     
+      <div class="u-pull-left">
+        <h5 class="u-mrg-t-0 u-mrg-b-2">Previous</h5>
+        <a href="/seed-docs/guide/naming/">Naming</a>
+      </div>
+    
     
       <div class="u-pull-right">
         <h5 class="u-mrg-t-0 u-mrg-b-2">Next</h5>
-        <a href="/seed-docs/guide/inheritance/">Inheritance</a>
+        <a href="/seed-docs/guide/scoping/">Scoping</a>
       </div>
     
   </div>
