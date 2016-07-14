@@ -1,0 +1,23 @@
+<section class="u-mrg-v-8">
+  <header>
+    <h2 class="u-mrg-b-0">
+      Guides
+    </h2>
+  </header>
+  <hr>
+  {% for post in site.guides %}
+    <div class="u-pad-v-4">
+      <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" class="t-no-underline">
+        <h3 class="t-h3 t-400 u-d-inline-block">
+          {{ post.title }}
+        </h3>
+      </a>
+      {% if post.description %}
+        <p class="u-mrg-0 t-sm u-op-6">
+          {{ post.description }}
+        </p>
+      {% endif %}
+    </div>
+    <hr>
+  {% endfor %}
+</section>

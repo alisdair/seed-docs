@@ -14,7 +14,11 @@ gulp.task('watch-jekyll', function () {
     global.config.src + '/**/*.{html,md}',
 
     '!' + global.config.src + '/.jekyll-metadata',
-    '!.jekyll-metadata'
+    '!.jekyll-metadata',
+
+    '!' + global.config.src + '/_guides/**/*.{html,md}',
+    '!' + global.config.src + '/_posts/**/*.{html,md}'
+
   ], ['build-jekyll-incremental'])
   .on('change', function(event) {
     var file = event.path

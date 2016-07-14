@@ -10,6 +10,7 @@ gulp.task('watch', function(callback) {
     'watch-scripts',
     'watch-images',
     'watch-jekyll-data',
+    'watch-jekyll-posts',
     'watch-jekyll'
   ], callback);
 });

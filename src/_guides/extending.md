@@ -1,5 +1,6 @@
 ---
 title: Extending
+description: "Our humble opinion on Sass's @extend function."
 ---
 
 <p class="t-headline-4 t-lh-heading t-300">Don't use @extend.</p>
