@@ -30,6 +30,3 @@ before_script:
 
 script:
   - gulp production
-
-after_success:
-  - gulp deploy-production
