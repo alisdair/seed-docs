@@ -79,6 +79,8 @@ The new compiled `box.css` file:
 
 ### Now this is how you extend.
 
+(Check out our guide on [extending](/seed-docs/guide/extending))
+
 
 Here is our BEM'ed up `_base.scss`:
 
