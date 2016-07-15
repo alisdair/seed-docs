@@ -5,11 +5,16 @@ description: "Our humble opinion on Sass's @extend function."
 
 <p class="t-headline-4 t-lh-heading t-300">Don't use @extend.</p>
 
-_This is just our humble opinion. You are 100% totally free to use `@extend` if you wish._
+{% include guide/opinion.html %}
 
 Instead, check out our guide on [inheritance](/seed-docs/guide/inheritance) to extend code without the crazies.
 
-### Powerful, but unpredictable
+
+---
+
+## Why @extend isn't recommended
+
+### It's powerful, but unpredictable
 
 `@extend` is an undeniably powerful function in the sass/scss arsenal. For simpler use cases (example below), `@extend` _should_ work as expected.
 
@@ -36,7 +41,7 @@ Instead, check out our guide on [inheritance](/seed-docs/guide/inheritance) to e
 If `.c-panel` was somewhere up higher on the stylesheet, and `.c-box` was somewhere lower, this `@extend` effect magically shifts things around. This little detail is especially important if you **needed** `.c-box` to be lower on your stylesheet.
 
 
-### Extend doesn't extend everything
+### It doesn't extend everything
 
 `@extend` only extends the top level properties of the class. A great use case would be with sass/scss written with the BEM structure. In the below example, we can see where `@extend` falls short.
 

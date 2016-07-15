@@ -1,17 +1,20 @@
 {% if page.previous.url or page.next.url %}
-  <hr class="u-mrg-v-8">
-  <div class="u-clearfix u-pad-b-4">
-    {% if page.previous.url %}
-      <div class="u-pull-left">
-        <h5 class="u-mrg-t-0 u-mrg-b-2">Previous</h5>
-        <a href="{{ page.previous.url | prepend: site.baseurl }}">{{page.previous.title}}</a>
+  <div class="u-pad-t-2">
+    <hr class="u-mrg-v-10">
+    <div class="o-row t-center">
+      <div class="o-col-6">
+        {% if page.previous.url %}
+          <h5 class="u-mrg-t-0 u-mrg-b-2">Previous</h5>
+          <a href="{{ page.previous.url | prepend: site.baseurl }}">{{page.previous.title}}</a>
+        {% endif %}
       </div>
-    {% endif %}
-    {% if page.next.url %}
-      <div class="u-pull-right">
-        <h5 class="u-mrg-t-0 u-mrg-b-2">Next</h5>
-        <a href="{{ page.next.url | prepend: site.baseurl }}">{{page.next.title}}</a>
+      <div class="o-col-6">
+        {% if page.next.url %}
+          <h5 class="u-mrg-t-0 u-mrg-b-2">Next</h5>
+          <a href="{{ page.next.url | prepend: site.baseurl }}">{{page.next.title}}</a>
+        {% endif %}
       </div>
-    {% endif %}
+    </div>
+    <hr class="u-mrg-t-10 u-mrg-b-5">
   </div>
 {% endif %}

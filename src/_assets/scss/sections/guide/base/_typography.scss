@@ -35,6 +35,11 @@
     font-size: t-heading(h5);
   }
 
+  h1 + h2,
+  h2 + h3 {
+    margin-top: 2rem;
+  }
+
   p {
     line-height: 1.6;
     margin-bottom: 1.5rem;
