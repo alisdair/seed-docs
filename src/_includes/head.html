@@ -4,7 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.description %}
+    {% assign description = page.description %}
+  {% else %}
+    {% if page.excerpt %}
+      {% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+    {% else %}
+      {% assign description = site.description %}
+    {% endif %}
+  {% endif %}
+  <meta name="description" content="{{ description | truncate: 160 }}">
 
   <!-- Hello you wonderful view sourcer :). -->
   <!-- You can find the source code this site here: -->
