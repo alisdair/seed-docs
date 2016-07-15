@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Extending</title>
-  <meta name="description" content="Don't use @extend.This is just our humble opinion. You are 100% totally free to use @extend if you wish.Instead, check out our guide on inheritance to extend...">
+  <meta name="description" content="Don't use @extend.  This is just our humble opinion.  You are 100% totally free to make it harder for yourself and your team if you wish.Instead, check out o...">
 
   <!-- Hello you wonderful view sourcer :). -->
   <!-- You can find the source code this site here: -->
@@ -18,7 +18,7 @@
   <!-- P.S. The stylesheet below is intentionally unminified. -->
   <!-- Sure that means that the page loads slightly slower. -->
   <!-- But, it makes it easier to inspect and poke around. -->
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=844c374474315cebabd7260037bc76ec">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=62a5d3bd009a646e65b944184657e6f3">
 
   <link rel="canonical" href="http://developer.helpscout.net/seed-docs/guide/extending/">
   <link rel="alternate" type="application/rss+xml" title="Seed Docs" href="http://developer.helpscout.net/seed-docs/feed.xml">
@@ -71,11 +71,18 @@
   <div>
     <p class="t-headline-4 t-lh-heading t-300">Don't use @extend.</p>
 
-<p><em>This is just our humble opinion. You are 100% totally free to use <code class="highlighter-rouge">@extend</code> if you wish.</em></p>
+<p class="u-op-4 t-sm">
+  This is just our humble opinion.<br />
+  You are 100% totally free to make it harder for yourself and your team if you wish.
+</p>
 
 <p>Instead, check out our guide on <a href="/seed-docs/guide/inheritance">inheritance</a> to extend code without the crazies.</p>
 
-<h3 id="powerful-but-unpredictable">Powerful, but unpredictable</h3>
+<hr />
+
+<h2 id="why-extend-isnt-recommended">Why @extend isn’t recommended</h2>
+
+<h3 id="its-powerful-but-unpredictable">It’s powerful, but unpredictable</h3>
 
 <p><code class="highlighter-rouge">@extend</code> is an undeniably powerful function in the sass/scss arsenal. For simpler use cases (example below), <code class="highlighter-rouge">@extend</code> <em>should</em> work as expected.</p>
 
@@ -101,7 +108,7 @@
 
 <p>If <code class="highlighter-rouge">.c-panel</code> was somewhere up higher on the stylesheet, and <code class="highlighter-rouge">.c-box</code> was somewhere lower, this <code class="highlighter-rouge">@extend</code> effect magically shifts things around. This little detail is especially important if you <strong>needed</strong> <code class="highlighter-rouge">.c-box</code> to be lower on your stylesheet.</p>
 
-<h3 id="extend-doesnt-extend-everything">Extend doesn’t extend everything</h3>
+<h3 id="it-doesnt-extend-everything">It doesn’t extend everything</h3>
 
 <p><code class="highlighter-rouge">@extend</code> only extends the top level properties of the class. A great use case would be with sass/scss written with the BEM structure. In the below example, we can see where <code class="highlighter-rouge">@extend</code> falls short.</p>
 
@@ -136,15 +143,20 @@
   </div>
 
   
-  <hr class="u-mrg-v-8">
-  <div class="u-clearfix u-pad-b-4">
-    
-    
-      <div class="u-pull-right">
-        <h5 class="u-mrg-t-0 u-mrg-b-2">Next</h5>
-        <a href="/seed-docs/guide/inheritance/">Inheritance</a>
+  <div class="u-pad-t-2">
+    <hr class="u-mrg-v-10">
+    <div class="o-row t-center">
+      <div class="o-col-6">
+        
       </div>
-    
+      <div class="o-col-6">
+        
+          <h5 class="u-mrg-t-0 u-mrg-b-2">Next</h5>
+          <a href="/seed-docs/guide/id/">#id</a>
+        
+      </div>
+    </div>
+    <hr class="u-mrg-t-10 u-mrg-b-5">
   </div>
 
 
