@@ -3,6 +3,8 @@ title: "#id"
 description: "Our humble opinion on adding styles on an #id selector."
 ---
 
+Adding CSS styling properties on an **#id** selector…
+
 <div class="u-pad-b-10">
 <p class="t-headline-4 t-lh-heading t-300 u-mrg-b-0">Don't do it.</p>
 Use classes instead.
@@ -13,5 +15,7 @@ Use classes instead.
 <p class="t-h3"><strong>Nope!</strong></p>
 
 Don't do it.
+
+However, IDs are perfectly fine (and probably recommended) for Javascript usage (oh, and for in-page anchors).
 
 {% include guide/opinion.html %}
