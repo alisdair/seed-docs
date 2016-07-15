@@ -10,7 +10,7 @@ gulp.task('development', function(callback) {
     'clean-jekyll',
     'jekyll',
     [
-      'styles-base'
+      'styles-development'
     ],
     'browsersync',
     'open-development',
