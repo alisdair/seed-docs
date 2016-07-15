@@ -18,7 +18,7 @@
   <!-- P.S. The stylesheet below is intentionally unminified. -->
   <!-- Sure that means that the page loads slightly slower. -->
   <!-- But, it makes it easier to inspect and poke around. -->
-  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=6325fa9a404ea2e306e75c0cd4d48e38">
+  <link rel="stylesheet" href="http://developer.helpscout.net/seed-docs/css/main.css?v=f86ad88ecb2db987839a91451268229d">
 
   <link rel="canonical" href="http://developer.helpscout.net/seed-docs/guide/scoping/">
   <link rel="alternate" type="application/rss+xml" title="Seed Docs" href="http://developer.helpscout.net/seed-docs/feed.xml">
@@ -193,7 +193,7 @@
 </code></pre>
 </div>
 
-<p>In the above snippet, we change the value of the <code class="highlighter-rouge">$color</code> variable in the scope of <code class="highlighter-rouge">.ketchup</code>. <code class="highlighter-rouge">$color</code>, which was once orange is now red  (at least in the context of <code class="highlighter-rouge">.ketchup</code>). Because <a href="http://the-foods-we-loved.wikia.com/wiki/Heinz_EZ_Squirt">purple ketchup</a>? Gross.</p>
+<p>In the above snippet, we change the value of the <code class="highlighter-rouge">$color</code> variable in the scope of <code class="highlighter-rouge">.ketchup</code>. <code class="highlighter-rouge">$color</code>, which was once <strong>purple</strong> is now <strong>red</strong>  (at least in the context of <code class="highlighter-rouge">.ketchup</code>). Because <a href="http://the-foods-we-loved.wikia.com/wiki/Heinz_EZ_Squirt">purple ketchup</a>? Gross.</p>
 
 <p>Next, we import the <code class="highlighter-rouge">_conditment-base.scss</code> styles within <code class="highlighter-rouge">.ketchup</code>.</p>
 
@@ -206,7 +206,7 @@
 </code></pre>
 </div>
 
-<p>Normally, <code class="highlighter-rouge">$color</code> would be replaced by purple once the code compiles. However, in this particular case, it be replaced with red due to our tweak in <code class="highlighter-rouge">.ketchup</code>.
+<p>Normally, <code class="highlighter-rouge">$color</code> would be replaced by <strong>purple</strong> once the code compiles. However, in this particular case, it be replaced with <strong>red</strong> due to our tweak in <code class="highlighter-rouge">.ketchup</code>.
 This results in our <code class="highlighter-rouge">.ketchup</code> class looking like this:</p>
 
 <div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="nc">.ketchup</span> <span class="p">{</span>
@@ -217,7 +217,7 @@ This results in our <code class="highlighter-rouge">.ketchup</code> class lookin
 </code></pre>
 </div>
 
-<p>The same thing happens with our <code class="highlighter-rouge">.mustard</code> class, except instead of the <code class="highlighter-rouge">$color</code> being red, it will be yellow.</p>
+<p>The same thing happens with our <code class="highlighter-rouge">.mustard</code> class, except instead of the <code class="highlighter-rouge">$color</code> being <strong>red</strong>, it will be <strong>yellow</strong>.</p>
 
 <div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="nc">.mustard</span> <span class="p">{</span>
   <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
@@ -227,7 +227,7 @@ This results in our <code class="highlighter-rouge">.ketchup</code> class lookin
 </code></pre>
 </div>
 
-<p>After the scope adjustments in <code class="highlighter-rouge">.ketchup</code> and <code class="highlighter-rouge">.mustard</code>, <code class="highlighter-rouge">$color</code> is back to being purple - ready to colourize other classes like, I don’t know, <a href="https://www.reddit.com/r/tipofmytongue/comments/443uvi/tomt_multi_colored_hot_dog_buns_from_wonder_bread/"><code class="highlighter-rouge">.hamburger-bun</code></a>.</p>
+<p>After the scope adjustments in <code class="highlighter-rouge">.ketchup</code> and <code class="highlighter-rouge">.mustard</code>, <code class="highlighter-rouge">$color</code> is back to being <strong>purple</strong> - ready to colourize other classes like, I don’t know, <a href="https://www.reddit.com/r/tipofmytongue/comments/443uvi/tomt_multi_colored_hot_dog_buns_from_wonder_bread/"><code class="highlighter-rouge">.hamburger-bun</code></a> perhaps.</p>
 
   </div>
 
