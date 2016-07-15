@@ -67,7 +67,7 @@ $pink-hot: pink; // Declare the variable
 
 This is where things get *really* deliciously wonderful. It is recommended that you check out our guide on [inheritance](/seed-docs/guide/inheritance) before continuing (or not, it's up to you).
 
-Let's say, we have 2 classes that are very similar to one another. We don't want to have to unnecessarily repeat code (there's that [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) again!). Here's how we would approach it by combining scoping and inheritance.
+Let's say, we have two classes that are very similar to one another. We don't want to have to unnecessarily repeat code (there's that [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) again!). Here's how we would approach it by combining scoping and inheritance.
 
 Below is a `_condiment-base.scss` file that contains properties that the two classes will be sharing:
 
