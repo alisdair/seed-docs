@@ -128,7 +128,7 @@ Hold up. A lot just happened. Let us break it down.
 }
 ```
 
-In the above snippet, we change the value of the `$color` variable in the scope of `.ketchup`. `$color`, which was once orange is now red  (at least in the context of `.ketchup`). Because [purple ketchup](http://the-foods-we-loved.wikia.com/wiki/Heinz_EZ_Squirt)? Gross.
+In the above snippet, we change the value of the `$color` variable in the scope of `.ketchup`. `$color`, which was once purple is now red  (at least in the context of `.ketchup`). Because [purple ketchup](http://the-foods-we-loved.wikia.com/wiki/Heinz_EZ_Squirt)? Gross.
 
 Next, we import the `_conditment-base.scss` styles within `.ketchup`.
 
