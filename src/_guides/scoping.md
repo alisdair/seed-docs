@@ -128,7 +128,7 @@ Hold up. A lot just happened. Let us break it down.
 }
 ```
 
-In the above snippet, we change the value of the `$color` variable in the scope of `.ketchup`. `$color`, which was once purple is now red  (at least in the context of `.ketchup`). Because [purple ketchup](http://the-foods-we-loved.wikia.com/wiki/Heinz_EZ_Squirt)? Gross.
+In the above snippet, we change the value of the `$color` variable in the scope of `.ketchup`. `$color`, which was once **purple** is now **red**  (at least in the context of `.ketchup`). Because [purple ketchup](http://the-foods-we-loved.wikia.com/wiki/Heinz_EZ_Squirt)? Gross.
 
 Next, we import the `_conditment-base.scss` styles within `.ketchup`.
 
@@ -141,7 +141,7 @@ Next, we import the `_conditment-base.scss` styles within `.ketchup`.
 }
 ```
 
-Normally, `$color` would be replaced by purple once the code compiles. However, in this particular case, it be replaced with red due to our tweak in `.ketchup`.
+Normally, `$color` would be replaced by **purple** once the code compiles. However, in this particular case, it be replaced with **red** due to our tweak in `.ketchup`.
 This results in our `.ketchup` class looking like this:
 
 
@@ -153,7 +153,7 @@ This results in our `.ketchup` class looking like this:
 }
 ```
 
-The same thing happens with our `.mustard` class, except instead of the `$color` being red, it will be yellow.
+The same thing happens with our `.mustard` class, except instead of the `$color` being **red**, it will be **yellow**.
 
 ```scss
 .mustard {
@@ -163,4 +163,4 @@ The same thing happens with our `.mustard` class, except instead of the `$color`
 }
 ```
 
-After the scope adjustments in `.ketchup` and `.mustard`, `$color` is back to being purple - ready to colourize other classes like, I don't know, [`.hamburger-bun`](https://www.reddit.com/r/tipofmytongue/comments/443uvi/tomt_multi_colored_hot_dog_buns_from_wonder_bread/).
+After the scope adjustments in `.ketchup` and `.mustard`, `$color` is back to being **purple** - ready to colourize other classes like, I don't know, [`.hamburger-bun`](https://www.reddit.com/r/tipofmytongue/comments/443uvi/tomt_multi_colored_hot_dog_buns_from_wonder_bread/) perhaps.
