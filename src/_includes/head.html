@@ -3,7 +3,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  {% if page.url == "/" %}
+    {% assign title = site.title %}
+  {% else %}
+    {% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+  {% endif %}
+
   {% if page.description %}
     {% assign description = page.description %}
   {% else %}
@@ -13,6 +18,7 @@
       {% assign description = site.description %}
     {% endif %}
   {% endif %}
+  <title>{{ title | escape }}</title>
   <meta name="description" content="{{ description | truncate: 160 }}">
 
   <!-- Hello you wonderful view sourcer :). -->
