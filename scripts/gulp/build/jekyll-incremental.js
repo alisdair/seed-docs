@@ -7,7 +7,7 @@ var runSequence = require('run-sequence');
 gulp.task('build-jekyll-incremental', function(callback) {
   runSequence(
     'jekyll-incremental',
-    'copy-cache-css',
+    'styles-base',
     'scripts-base',
     'browsersync-reload',
     callback);
