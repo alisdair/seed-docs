@@ -8,7 +8,7 @@ gulp.task('build-jekyll-data', function(callback) {
   runSequence(
     'jekyll',
     [
-      'copy-cache-css',
+      'styles-base',
       'images'
     ],
     'scripts-base',

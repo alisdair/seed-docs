@@ -3,7 +3,7 @@ title: Extending
 description: "Our humble opinion on Sass's @extend function."
 ---
 
-<p class="t-headline-4 t-lh-heading t-300">Don't use @extend.</p>
+<p class="tx-headline-4 tx-lh-heading tx-300">Don't use @extend.</p>
 
 {% include guide/opinion.html %}
 
