@@ -10,7 +10,7 @@
 
 // Define the Seed Docs color scheme
 $seed-docs-color-scheme: (
-  primary: _color(blue, 500),
+  primary: _color(blue, 500), // use (blue, 500) from the Help Scout color scheme
   hr: #eee
 ) !default;
 
