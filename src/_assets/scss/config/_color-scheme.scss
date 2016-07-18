@@ -1,10 +1,19 @@
 // Config :: Color scheme
 
-// Define the color scheme
+// Packs: Color schemes
+// Import the Help Scout color scheme. All of the color scheme configs of
+// the Help Scout color scheme will instantly be avaiable
+// Variables:
+// https://github.com/helpscout/seed-color-scheme-helpscout/blob/master/scss/pack/seed-color-scheme-helpscout/_config.scss
+@import "pack/seed-color-scheme-helpscout/_index";
+
+// Define the Seed Docs color scheme
 $seed-docs-color-scheme: (
   primary: _color(blue, 500),
   hr: #eee
 ) !default;
 
 // Add the color scheme
+// This adds/extends all the colors of the project's color scheme.
+// That means Help Scout color + Seed docs colors!
 @include _color($seed-docs-color-scheme);
