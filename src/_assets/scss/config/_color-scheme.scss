@@ -1,0 +1,10 @@
+// Config :: Color scheme
+
+// Define the color scheme
+$seed-docs-color-scheme: (
+  primary: _color(blue, 500),
+  hr: #eee
+) !default;
+
+// Add the color scheme
+@include _color($seed-docs-color-scheme);
