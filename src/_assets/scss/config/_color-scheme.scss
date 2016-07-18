@@ -1,11 +1,12 @@
 // Config :: Color scheme
 
 // Packs: Color schemes
-// Import the Help Scout color scheme. All of the color scheme configs of
-// the Help Scout color scheme will instantly be avaiable
+// Import the Help Scout color scheme.
+@import "pack/seed-color-scheme-helpscout/_index";
+// All of the color scheme configs of the Help Scout color scheme will instantly be available.
 // Variables:
 // https://github.com/helpscout/seed-color-scheme-helpscout/blob/master/scss/pack/seed-color-scheme-helpscout/_config.scss
-@import "pack/seed-color-scheme-helpscout/_index";
+
 
 // Define the Seed Docs color scheme
 $seed-docs-color-scheme: (
