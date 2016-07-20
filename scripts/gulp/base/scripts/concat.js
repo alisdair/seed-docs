@@ -9,7 +9,7 @@ var concat = require('../../pipes/concat');
 
 gulp.task('scripts-concat', function(callback) {
   return gulp.src([
-      global.config.src + '/_assets/js/main.js'
+      global.config.src + '/js/main.js'
     ])
     .pipe(plumber())
     .pipe(concat())

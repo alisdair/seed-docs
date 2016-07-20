@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
     "check-dependencies": "^0.12.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
@@ -53,6 +54,8 @@
     "sass-pathfinder": "0.0.2",
     "sass-true": "^2.1.2",
     "seed-cli": "^0.2.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
     "yargs": "^4.8.1"
   },
   "dependencies": {

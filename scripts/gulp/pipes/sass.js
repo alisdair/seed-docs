@@ -8,7 +8,7 @@ var sass = require('gulp-sass');
 var pathfinder = require('sass-pathfinder');
 
 var includePaths = pathfinder(
-  global.config.src + '/_assets/scss',
+  global.config.src + '/scss',
   require('seed-reset'),
   require('seed-border'),
   require('seed-breakpoints'),

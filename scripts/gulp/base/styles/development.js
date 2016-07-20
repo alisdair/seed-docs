@@ -8,7 +8,7 @@ var sass = require('../../pipes/sass');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('styles-development', function(callback) {
-  return gulp.src(global.config.src + '/_assets/scss/**/*.scss')
+  return gulp.src(global.config.src + '/scss/**/*.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())

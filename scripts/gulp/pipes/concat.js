@@ -7,7 +7,7 @@ var concat = require('gulp-concat');
 
 var pipe = lazypipe()
   .pipe(function() {
-    return concat('app.js', {
+    return concat('main.js', {
       newLine: ';'
     });
   })
