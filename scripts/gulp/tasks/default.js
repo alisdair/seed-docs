@@ -11,7 +11,8 @@ gulp.task('default', function(callback) {
     'clean-jekyll',
     'jekyll',
     [
-      'styles-development'
+      'styles-development',
+      'scripts-base'
     ],
     'browsersync',
     'open-development',

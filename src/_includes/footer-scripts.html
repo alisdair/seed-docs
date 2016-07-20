@@ -1,0 +1,7 @@
+{% if site.ENV == "production" %}
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+{% else %}
+<script type="text/javascript" src="{{ "/js/jquery.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+{% endif %}
+<script type="text/javascript" src="{{ "/js/app.js" | prepend: site.baseurl | prepend: site.url | cachebuster }}"></script>
+

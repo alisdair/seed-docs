@@ -10,6 +10,7 @@ gulp.task('production', function(callback) {
     'clean-jekyll',
     'jekyll-production',
     'styles-base',
+    'scripts-base',
     callback
   );
 });
