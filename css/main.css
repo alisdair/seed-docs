@@ -3265,6 +3265,35 @@ input[type="search"] {
     .u-visible\@xl {
       visibility: visible !important; } }
 
+.t-bdr-none {
+  border-style: solid;
+  border-width: 0; }
+
+.t-bdr {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eee; }
+
+.t-bdr-top {
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #eee; }
+
+.t-bdr-right {
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: #eee; }
+
+.t-bdr-bottom {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #eee; }
+
+.t-bdr-left {
+  border-left-style: solid;
+  border-width: 1px;
+  border-color: #eee; }
+
 html,
 body {
   -moz-osx-font-smoothing: grayscale ! important;
