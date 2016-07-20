@@ -8,6 +8,6 @@ var concat = require('../pipes/concat');
 
 gulp.task('watch-scripts', function (callback) {
   gulp.watch([
-    global.config.src + '/_assets/js/**/*.js'
+    global.config.src + '/js/**/*.js'
   ], ['scripts-base']);
 });

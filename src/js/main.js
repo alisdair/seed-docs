@@ -1,9 +1,5 @@
 // Main
-(function($) {
-  'use strict';
+'use strict';
+var greetings = require('./greetings');
 
-  var greetings = require('./greetings');
-
-  greetings();
-
-})(jQuery);
+greetings();
