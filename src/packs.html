@@ -1,5 +1,35 @@
 ---
+title: Seed Packs
 layout: default
 ---
 
-<div id="seed-packs"></div>
+<h1 class="tx-h2">
+  Seed Packs
+</h1>
+<hr>
+<div id="app-seed-packs">
+  <div id="seed-pack-list"></div>
+</div>
+
+<script type="text/template" id="template-pack-item">
+  <div class="u-pad-v-4">
+    <div class="o-flexy">
+      <div class="o-flexy__item">
+        <a href="<%= html_url %>" target="_blank" class="u-d-inline-block tx-no-underline">
+          <h3 class="tx-h4 tx-400 u-d-inline-block u-mrg-b-2">
+            <%= name %>
+          </h3>
+        </a>
+      </div>
+      <div class="o-flexy__item">
+        <a href="https://travis-ci.org/helpscout/<%= name %>" target="_blank">
+          <img src="https://travis-ci.org/helpscout/<%= name %>.svg?branch=master">
+        </a>
+      </div>
+    </div>
+    <p class="u-mrg-0 tx-sm u-op-6">
+      <%= description %>
+    </p>
+  </div>
+  <hr>
+</script>
