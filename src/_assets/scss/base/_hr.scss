@@ -1,7 +1,9 @@
 // Base :: HR
 
 @at-root hr {
+  @import "pack/seed-border/config";
+
   border: 0;
-  border-top: 1px solid _color(hr);
+  border-top: $seed-border;
   height: 0;
 }
