@@ -12,13 +12,9 @@ module.exports = greetings;
 
 },{}],2:[function(require,module,exports){
 // Main
-(function($) {
-  'use strict';
+'use strict';
+var greetings = require('./greetings');
 
-  var greetings = require('./greetings');
-
-  greetings();
-
-})(jQuery);
+greetings();
 
 },{"./greetings":1}]},{},[2]);
