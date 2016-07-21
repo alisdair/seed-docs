@@ -56,15 +56,15 @@ app.prototype.parse = function(response) {
 
 app.prototype.render = function(response) {
   var self = this;
-  var _html = '';
 
-  _.forEach(response, function(repo) {
+  _.forEach(response, function(repo, index) {
     var template = _.template(self.template)(repo);
-    _html += template;
-  });
 
-  // Render into the DOM!
-  this.$el.html(_html);
+    // Animate each repo into the DOM after three frames!
+    setTimeout(function() {
+      self.$el.append(template);
+    }, index * 50);
+  });
 
   return this;
 };
